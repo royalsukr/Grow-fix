@@ -1,37 +1,66 @@
+@import url();
 body {
   width: 100%;
   height: 100dvh;
   background-size: cover;
+  background-color: #6E7191;
+}
+
+nav {
+  display: flex;
+  padding-top: 10px;
+  padding: 10px;
+  justify-content: space-between;
+  background-color: #4E4B66;
+  align-items: center;
+}
+nav .help {
+  display: flex;
+  height: 20px;
+  color: aliceblue;
+  gap: 10px;
+  /*
+      breakpoints are viewport arbitrary values,
+      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+      the breakpoints I used were inspired by Bootstrap =>
+      https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  */
+}
+@media only screen and (max-width: 575.98px) {
+  nav .help {
+    display: none;
+  }
+}
+nav .question {
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.left-nav {
+  align-items: center;
+  padding-left: 50px;
   background-color: #14142B;
-}
-
-.hero-img {
-  height: 100px;
-}
-
-.title {
-  font-size: 50px;
-  width: 130px;
-  color: white;
-  font-family: "Roboto", sans-serif;
-}
-
-.little-title {
-  font-size: 20px;
-  color: white;
-  font-family: "Roboto", sans-serif;
   width: 250px;
-  padding-top: 20px;
+  height: 100%;
+  /*
+      breakpoints are viewport arbitrary values,
+      they are defined with the aim of allowing the SCSS/CSS code of your app' behave accordingly to your user's device width,
+      the breakpoints I used were inspired by Bootstrap =>
+      https://getbootstrap.com/docs/5.0/layout/breakpoints/
+  */
+}
+@media only screen and (max-width: 575.98px) {
+  .left-nav {
+    display: none;
+  }
+}
+.left-nav .list {
+  padding-bottom: 130px;
+  color: azure;
   font-family: "Roboto", sans-serif;
 }
-
-.hero-title {
-  padding-left: 100px;
-  padding-top: 100px;
-}
-
-.img {
-  float: inline-end;
-  margin-top: -480px;
-  height: 99%;
+.left-nav .li {
+  padding-top: 20px;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
