@@ -3,4 +3,35 @@ body {
   height: 100dvh;
   background-size: cover;
   background-color: #14142B;
+}
+
+.hero-img {
+  height: 100px;
+}
+
+.title {
+  font-size: 50px;
+  width: 130px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.little-title {
+  font-size: 20px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  width: 250px;
+  padding-top: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.hero-title {
+  padding-left: 100px;
+  padding-top: 100px;
+}
+
+.img {
+  float: inline-end;
+  margin-top: -480px;
+  height: 99%;
 }/*# sourceMappingURL=main.css.map */
